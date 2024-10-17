@@ -32,7 +32,7 @@ use App\Models\Category;
 |
 */
 // ----------------------------- Start Backlog-----------------------//
-// Route::group(['middleware' => 'prevent-back-history'],function(){
+Route::group(['middleware' => 'prevent-back-history'],function(){
 
 
 Route::get('/', function () {
@@ -187,5 +187,5 @@ Route::get('/new-password', [AuthController::class, 'newPassword'])->name('new-p
 
 
 // ----------------------------- End Of Route Back Log -----------------------//
-// });
+});
 
